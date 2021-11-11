@@ -1,5 +1,5 @@
 # CSE264 Project 4: Making a Blackjack 21 Game using HTML/CSS/DOM
-## Due: Tuesday, May 3, 2021 at 11:59 PM
+## Due: Tuesday, November 30, 2021 at 11:59 PM
 
 In this assignment, you will use HTML, CSS, and JavaScript on the Frontend to create a playable blackjack 21 game.
 
@@ -28,8 +28,8 @@ Your page should have a green (card table green) background. At the top center w
 ### Game Flow
 The flow of the game (events that need to take place) are as follows:
 * The moment the main HTML page loads, a modal (screen overlay, see [here] (https://semantic-ui.com/modules/modal.html) as an example) appears asking if the player wishes to play. Under that there is a green button labeled "Deal" which will start the game.
-* Once the button is pressed, the modal goes away, and the player and dealer are dealt two cards. The dealer is given cards first, with an animation showing the card moving face down towards the dealer's hand. The second card dealt to the dealer is animated with a flip to reveal the card to the player. Then the player gets their cards, animated to move from the deck to the players hand. They are then both flipped face up to reveal the cards to the player. The score for the cards is displayed to the right of both the player and the dealer.
-* Player can now press the "Hit Me" button to get another card. This card will be animated to move from the deck to the player's hand. The score total will also update. If the score goes above 21, the dealer's hand is completely revealed, and the player loses (go to the game over modal as described later in this section. 
+* Once the button is pressed, the modal goes away, and the player and dealer are dealt two cards. The dealer is given cards first. Then the player gets their cards. They are then both flipped face up to reveal the cards to the player. The score for the cards is displayed to the right of both the player and the dealer.
+* Player can now press the "Hit Me" button to get another card. The score total will also update. If the score goes above 21, the dealer's hand is completely revealed, and the player loses (go to the game over modal as described later in this section. 
 * Once the player presses the "stay" button. The dealer starts their turn. The dealer's hand is completely revealed (and the score by the dealer's hand is now updated). The dealer will continue to add cards until they have at least a score of 17. If the dealer goes over 21, the game is over and the player wins. (Go to the game over screen).
 * If both the player and dealer do not go over 21, then who ever has the highest number wins. If they have the same score, it is a tie. (Go to the game over modal)
 * The game over modal will display who won, and a button asking if the player wishes to play again. If this button is pressed. The cards, score, etc are cleared, the modal goes away. And the player can play the game again. 
@@ -37,8 +37,8 @@ The flow of the game (events that need to take place) are as follows:
 ### Other considerations
 * You do not need to change any Node.js or Express code for this project. This is only a frontend project. Most of your code will be changes to the pug view file, and /public/javascripts/main.js file.
 * You can write Raw HTML files instead if you wish. Just replace the pug files to an HTML file in the route.
-* You should not need to reload the page once it loads for the first time. Everything should be done by using JavaScript to change and update the DOM. Whem the game restarts, you chould clear the DOM to the start state of the game, and continue from there. Do you reload the webpage to play another game.
-* You can use Semantic UI, or any other CSS library is you wish. You can update these in the layout.pug file in the views directory. 
+* You should not need to reload the page once it loads for the first time. Everything should be done by using JavaScript to change and update the DOM. Whem the game restarts, you chould clear the DOM to the start state of the game, and continue from there. Do not reload the webpage to play another game.
+* You can use Semantic UI, or any other CSS library if you wish. You can update these in the layout.pug file in the views directory. 
 * Some features in Semantic UI will require jQuery and SemanticUI.js. You can import these from cdnjs [https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js](https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js)
 * You should use regular JS to update and change the DOM, not jQuery. 
 * You can use any feature in Semantic UI (or similar CSS Library) that you would find useful.
@@ -52,10 +52,10 @@ You must have node.js running on your machine. Once you have cloned this project
 
 
 ### Grading
-* **75 Points** - Game plays correctly (with correct scores, win and loss states, etc)
-* **10 Points** - Animations work as stated in this README. 
+* **80 Points** - Game plays correctly (with correct scores, win and loss states, etc) 
 * **10 Points** - Game can continue and replay without reloading page.
-* **5 Points** -  Code is well commented and easy to read/follow.
+* **10 Points** -  Code is well commented and easy to read/follow.
+* **BONUS 10 Points** - add animations to show cards moving from deck to player/dealer hands, animations to flip the card, 1 second delays on cards moving/flipping/updating
 
 * If code doesn't run/compile you can get no more than a 65, although this score can be much lower. But please write comments and a README to explain what you were trying to do. 
 
