@@ -1,5 +1,5 @@
 # CSE264 Project 4: Making a Blackjack 21 Game using HTML/CSS/DOM
-## Due: Tuesday, November 30, 2021 at 11:59 PM
+## Due: Monday, May 2, 2022 at 11:59 PM
 
 In this assignment, you will use HTML, CSS, and JavaScript on the Frontend to create a playable blackjack 21 game.
 
@@ -23,7 +23,7 @@ The game goes as follows:
 Number cards are worth the number listed on the card. Face cards (King, Queen, Jack) are worth 10 points. And Aces are worth 11 or 1 points (use the value that ensures you do not go over 21).
 
 ### Frontend layout
-Your page should have a green (card table green) background. At the top center will be the dealer's hand, on the bottom center will be the players hand. On the right side of the dealer and player's hand will be a number showing the current points for that hand (labeled as such). On the left side of the player's hand will be two buttons. One label Hit me, which will give a new card to the player and another labeled "Stay", which will finish the player's turn. Between the player and the dealer on the left will be the deck of card (face down).
+Your page should have a green (card table green) background. At the top center will be the dealer's hand, on the bottom center will be the players hand. On the right side of the dealer and player's hand will be a number showing the current points for that hand (labeled as such). On the left side of the player's hand will be two buttons. One label Hit me, which will give a new card to the player and another labeled "Stay", which will finish the player's turn. Between the player and the dealer on the left will be the deck of cards (face down).
 
 ### Game Flow
 The flow of the game (events that need to take place) are as follows:
